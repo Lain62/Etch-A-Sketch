@@ -20,12 +20,12 @@ function boxesClickToggle (box){
 	}
 }
 
-function boxesCreate(){
-	for (let x = 1; x <= 16; x++){
+function boxesCreate(width,height){
+	for (let x = 1; x <= width; x++){
 		const collumnBox = document.createElement('div');
 		collumnBox.classList.add('collumnBox');
 		divContainerBoard.appendChild(collumnBox)
-		for (let y = 1; y <= 16; y++){
+		for (let y = 1; y <= height; y++){
 			const box = document.createElement('div');
 			box.classList.add('box');
 			collumnBox.appendChild(box);
@@ -43,4 +43,4 @@ function boxesCreate(){
 	}
 }
 
-boxesCreate();
+boxesCreate(50, 50);
