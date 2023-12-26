@@ -1,0 +1,22 @@
+.containerBoard{
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+}
+
+.collumnBox, .box{
+	display:flex;
+}
+
+.collumnBox{
+	flex-direction: column;
+}
+
+.box{
+	flex-direction:row;
+	border-style: solid;
+	border-width: 0.5px;
+	width: 15px;
+	height: 15px
+}
+
