@@ -29,6 +29,7 @@ function boxesCreate(width,height){
 			const box = document.createElement('div');
 			box.classList.add('box');
 			collumnBox.appendChild(box);
+
 			box.addEventListener('click', function (box) {
 				boxesClickToggle(box);
 			});
@@ -38,7 +39,6 @@ function boxesCreate(width,height){
 			box.addEventListener('mouseout', function (box) {
 				boxesHoverLeave(box);
 			});
-			
 		}
 	}
 }
