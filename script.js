@@ -1,10 +1,10 @@
-const divContainerBoard = document.querySelector('.containerBoard');
+const divContainerBoard = document.querySelector('.board');
 
 function boxesHoverOver (box){
 	if (box.target.style.background !== 'black'){
 		box.target.style.background = 'grey';
+		}
 	}
-}
 
 function boxesHoverLeave (box){
 	if (box.target.style.background !== 'black'){
