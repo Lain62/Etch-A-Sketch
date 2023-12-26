@@ -55,6 +55,16 @@ function boxesCreate(size){
 }
 
 btnSizeChange.addEventListener('click', () => {
-	let size = prompt("Enter new size", "1-100")
-	changeSize(size)
+	let size = prompt("Enter new size 1-100", "")
+	while (isNaN(size) || size > 100 || size < 0){
+		size = prompt("Please enter a number between 1-100", "")
+	}
+	if (size != null && size != ''){
+		changeSize(size)
+	}else{
+
+	}
+
 })
+
+boxesCreate(25)
